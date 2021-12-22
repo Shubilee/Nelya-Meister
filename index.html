@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="img/icons/ico.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant&family=Raleway:wght@300;400;500&display=swap"rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    .links{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .links a{
+        margin-bottom: 5px;
+        font-size: 30px;
+    }
+</style>
+<body>
+    <div class="wrapper">
+        
+        <main class="page">
+        <div class="links">
+            <a href="main.html">Main</a>
+            <a href="partner.html">Partner</a>
+            <a href="showroom.html">Showroom</a>
+            <a href="info.html">Info</a>
+            <a href="contacts.html">Contacts</a>
+            <a href="error.html">Error</a>
+            <a class="_popup-link" href="#shop">Попап Show</a>
+            <a class="_popup-link" href="#form">Попап Form</a>
+            <a class="_popup-link" href="#text">Попап Text</a>
+        </div>
+        
+        <!-- Для ссылки указать href="#ИМЯ" -->
+<!-- ИМЯ дописать в popup_ . Получится popup_ИМЯ -->
+<div class="popup popup_shop">
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18"
+                    height="18" viewBox="0 0 18 18">
+                    <defs>
+                        <path id="avzva"
+                            d="M691.485 160.07l-1.414 1.415-7.071-7.071-7.071 7.071-1.414-1.414 7.07-7.071-7.07-7.071 1.414-1.415 7.07 7.071 7.072-7.07 1.414 1.414-7.07 7.07z" />
+                    </defs>
+                    <g>
+                        <g transform="translate(-674 -144)">
+                            <use fill="#fff" xlink:href="#avzva" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="popup_shop__title">
+                <p>Über Shop</p>
+            </div>
+            <div class="popup_shop__text">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard
+                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                    make a type specimen
+                    book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                    remaining essentially
+                    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                    Ipsum passages, and more
+                    recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div class="popup popup_text">
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18"
+                    height="18" viewBox="0 0 18 18">
+                    <defs>
+                        <path id="avzva"
+                            d="M691.485 160.07l-1.414 1.415-7.071-7.071-7.071 7.071-1.414-1.414 7.07-7.071-7.07-7.071 1.414-1.415 7.07 7.071 7.072-7.07 1.414 1.414-7.07 7.07z" />
+                    </defs>
+                    <g>
+                        <g transform="translate(-674 -144)">
+                            <use fill="#fff" xlink:href="#avzva" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+           
+            <div class="popup_shop__text">
+                <p>Ihre Daten werden moderiert, warten Sie auf eine Antwort des Administrators.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="popup popup_form">
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18"
+                    height="18" viewBox="0 0 18 18">
+                    <defs>
+                        <path id="avzva"
+                            d="M691.485 160.07l-1.414 1.415-7.071-7.071-7.071 7.071-1.414-1.414 7.07-7.071-7.07-7.071 1.414-1.415 7.07 7.071 7.072-7.07 1.414 1.414-7.07 7.07z" />
+                    </defs>
+                    <g>
+                        <g transform="translate(-674 -144)">
+                            <use fill="#fff" xlink:href="#avzva" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="_tabs tabs">
+                <div class="tabs__items">
+                    <div class="_tabs-item _active tabs__item">Genehmigung</div>
+                    <div class="_tabs-item tabs__item">Anmeldung</div>
+                </div>
+                <div class="tabs__blocks">
+                    <div class="_tabs-block _active tabs__block">
+                        <form action="#" class="form">
+                            <div class="form__name" >
+                                <input data-required type="text" data-error="E-Mail oder Passwort ist nicht korrekt" id="name1" placeholder="Dein Login">
+                                <label for="name1">
+                                    <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.7031 13.0285C16.7031 11.7977 17.9954 9.36695 17.9954 7.12079C17.9954 3.92079 15.38 0.351562 11.8416 0.351562C8.30311 0.351562 5.68773 3.92079 5.68773 7.12079C5.68773 9.36695 6.98003 11.7977 8.98003 13.0285C4.24157 14.29 0.764648 18.6285 0.764648 23.7362C0.764648 24.0746 1.04157 24.3516 1.38003 24.3516H22.3031C22.6416 24.3516 22.9185 24.0746 22.9185 23.7362C22.9185 18.6285 19.4416 14.29 14.7031 13.0285ZM6.91849 7.12079C6.91849 3.95156 9.53388 1.58233 11.8416 1.58233C14.1493 1.58233 16.7646 3.95156 16.7646 7.12079C16.7646 10.29 14.1493 12.6593 11.8416 12.6593C9.53388 12.6593 6.91849 10.29 6.91849 7.12079ZM2.02619 23.1208C2.33388 17.9823 6.64157 13.89 11.8416 13.89C17.0416 13.89 21.3493 17.9823 21.657 23.1208H2.02619Z"
+                                            fill="grey" />
+                                    </svg>
+                                </label>
+                            </div>
+                            <div class="form__password">
+                                <input data-required type="password" placeholder="Ihr Passwort" name="password"
+                                    id="password">
+                                <label for="password">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M23.8672 8.26446H20.7933C20.7933 3.73875 17.1045 0.0358887 12.596 0.0358887C8.08747 0.0358887 4.39869 3.73875 4.39869 8.26446H1.32471C0.949 8.26446 0.641602 8.57303 0.641602 8.95017V23.3502C0.641602 23.7273 0.949 24.0359 1.32471 24.0359H23.8672C24.2429 24.0359 24.5503 23.7273 24.5503 23.3502V8.95017C24.5503 8.57303 24.2429 8.26446 23.8672 8.26446ZM12.596 1.40732C16.3531 1.40732 19.427 4.49303 19.427 8.26446H5.7649C5.7649 4.49303 8.83889 1.40732 12.596 1.40732ZM23.1841 22.6645H2.00782V9.63589H23.1841V22.6645ZM12.596 13.0645C11.2639 13.0645 10.2051 14.1273 10.2051 15.4645C10.2051 16.5616 10.9224 17.453 11.9129 17.7616V19.2359C11.9129 19.613 12.2203 19.9216 12.596 19.9216C12.9717 19.9216 13.2791 19.613 13.2791 19.2359V17.7616C14.2696 17.453 14.9868 16.5616 14.9868 15.4645C14.9868 14.1273 13.928 13.0645 12.596 13.0645ZM12.596 16.493C12.0153 16.493 11.5713 16.013 11.5713 15.4645C11.5713 14.8816 12.0153 14.4359 12.596 14.4359C13.1766 14.4359 13.6206 14.8816 13.6206 15.4645C13.6206 16.013 13.1766 16.493 12.596 16.493Z"
+                                            fill="#8D8D8D" />
+                                    </svg>
+                                </label>
+                            </div>
+
+                            <div class="form__btn"><button class="btn" type="submit">Genehmigung</button></div>
+                        </form>
+                    </div>
+                    <div class="_tabs-block tabs__block">
+                        <form action="#" class="form">
+                            <div class="form__name">
+                                <input data-required type="text" id="name2" placeholder="Ihr Name">
+                                <label for="name2">
+                                    <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.7031 13.0285C16.7031 11.7977 17.9954 9.36695 17.9954 7.12079C17.9954 3.92079 15.38 0.351562 11.8416 0.351562C8.30311 0.351562 5.68773 3.92079 5.68773 7.12079C5.68773 9.36695 6.98003 11.7977 8.98003 13.0285C4.24157 14.29 0.764648 18.6285 0.764648 23.7362C0.764648 24.0746 1.04157 24.3516 1.38003 24.3516H22.3031C22.6416 24.3516 22.9185 24.0746 22.9185 23.7362C22.9185 18.6285 19.4416 14.29 14.7031 13.0285ZM6.91849 7.12079C6.91849 3.95156 9.53388 1.58233 11.8416 1.58233C14.1493 1.58233 16.7646 3.95156 16.7646 7.12079C16.7646 10.29 14.1493 12.6593 11.8416 12.6593C9.53388 12.6593 6.91849 10.29 6.91849 7.12079ZM2.02619 23.1208C2.33388 17.9823 6.64157 13.89 11.8416 13.89C17.0416 13.89 21.3493 17.9823 21.657 23.1208H2.02619Z"
+                                            fill="grey" />
+                                    </svg>
+                                </label>
+                            </div>
+
+                            <div class="form__email">
+                                <input data-required="email" data-error="Geben Sie die richtigen Daten ein" type="email" placeholder="Deine E-Mail" name="email"
+                                    id="email1">
+                                <label for="email1"><svg width="25" height="17" viewBox="0 0 25 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.1642 0.696777H1.36416C1.03416 0.696777 0.76416 0.966777 0.76416 1.29678V16.2968C0.76416 16.6268 1.03416 16.8968 1.36416 16.8968H24.1642C24.4942 16.8968 24.7642 16.6268 24.7642 16.2968V1.29678C24.7642 0.966777 24.4942 0.696777 24.1642 0.696777ZM22.7242 1.89678L12.7642 11.8568L2.80416 1.89678H22.7242ZM1.96416 2.73678L8.02416 8.79678L1.96416 14.8568V2.73678ZM2.83416 15.6968L8.86416 9.66678L12.3442 13.1468C12.5842 13.3868 12.9442 13.3868 13.1842 13.1468L16.6642 9.66678L22.6942 15.6968H2.83416ZM23.5642 14.8568L17.5042 8.79678L23.5642 2.73678V14.8568Z"
+                                            fill="#8D8D8D" />
+                                    </svg>
+                                </label>
+                            </div>
+                            <div class="form__password">
+                                <input data-required type="password" placeholder="Passsword" name="password"
+                                    id="password1">
+                                <label for="password1">
+                                    <svg width="25" height="14" viewBox="0 0 25 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.3965 2.47825C10.0498 2.47825 8.12982 4.39825 8.12982 6.74491C8.12982 9.09158 10.0498 11.0116 12.3965 11.0116C14.7432 11.0116 16.6632 9.09158 16.6632 6.74491C16.6632 4.39825 14.7432 2.47825 12.3965 2.47825ZM12.3965 9.94491C10.6365 9.94491 9.19648 8.50491 9.19648 6.74491C9.19648 4.98491 10.6365 3.54491 12.3965 3.54491C14.1565 3.54491 15.5965 4.98491 15.5965 6.74491C15.5965 8.50491 14.1565 9.94491 12.3965 9.94491ZM24.2365 6.37158L21.9432 4.05158C19.4098 1.49158 16.0232 0.0782471 12.3965 0.0782471C8.76982 0.0782471 5.38315 1.49158 2.84982 4.05158L0.556484 6.37158C0.343151 6.58491 0.343151 6.90491 0.556484 7.11825L2.84982 9.43825C5.38315 11.9982 8.76982 13.4116 12.3965 13.4116C16.0232 13.4116 19.4098 11.9982 21.9432 9.43825L24.2365 7.11825C24.4498 6.90491 24.4498 6.58491 24.2365 6.37158ZM21.1965 8.69158C18.8498 11.0382 15.7298 12.3449 12.3965 12.3449C9.06315 12.3449 5.94315 11.0382 3.59648 8.69158L1.67648 6.74491L3.59648 4.79825C5.94315 2.45158 9.06315 1.14491 12.3965 1.14491C15.7298 1.14491 18.8498 2.45158 21.1965 4.79825L23.1165 6.74491L21.1965 8.69158Z"
+                                            fill="#8D8D8D" />
+                                    </svg>
+                                </label>
+                            </div>
+                            <div class="form__password">
+                                <input data-required type="password"  placeholder="Confirm password" name="password"
+                                    id="password2">
+
+                            </div>
+
+                            <div class="form__btn"><button class="btn" type="submit">Jetzt registrieren</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<div class="popup popup_gallery">
+    <div class="popup__content">
+        <div class="popup__body">
+
+            <div class="popup__swiper">
+                <div class="swiper-container swiper-gallery">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <img src="img/showroom/img-1.jpg" alt="фото">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <img src="img/showroom/img-2.jpg" alt="фото">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <img src="img/showroom/img-3.jpg" alt="фото">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <img src="img/showroom/img-4.jpg" alt="фото">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="popup__close"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="popup popup_video">
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close popup__close_video"></div>
+            <div class="popup__video _video"></div>
+        </div>
+    </div>
+</div>
+    </div>
+    <!-- <script src="https://maps.google.com/maps/api/js?sensor=false&amp;key="></script> -->
+<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+
+
+
